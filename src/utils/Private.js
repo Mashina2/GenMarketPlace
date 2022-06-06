@@ -1,0 +1,1 @@
+export const ownerPrivateKey = "8f6228d205cea8f830c9658919496793e8478a8b5a0af8767fc3f24bd05e7aab"

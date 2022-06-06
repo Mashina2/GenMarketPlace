@@ -1,0 +1,964 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background: #ffffff;
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.mtb50 {
+  margin: 50px 0;
+}
+.mtb40 {
+  margin-top: 40px !important;
+}
+.mtb30 {
+  margin-top: 30px !important;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.text-gold {
+  color: #daa520;
+}
+.text-bold {
+  font-weight: 600;
+}
+.text-normal {
+  font-weight: 400 !important;
+}
+.ff-play {
+  font-family: 'Playfair Display', serif;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.line-bar {
+  background: rgb(243, 227, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(243, 227, 152, 1) 0%,
+    rgba(225, 172, 68, 1) 50%,
+    rgba(243, 227, 152, 1) 100%
+  );
+  height: 12px;
+  width: 100%;
+}
+.header-top {
+  text-align: center;
+  font-size: 12px;
+  background: #eeeeee;
+  padding: 8px;
+}
+.header-link {
+  border: 1px solid #000;
+  padding: 5px 20px;
+}
+.brand-area-inner button {
+  border: none;
+}
+.header-top strong {
+  font-weight: 600;
+}
+.header-logo {
+  text-align: center;
+  padding: 60px 0;
+}
+.header-top p a {
+  color: #000;
+  text-decoration: underline;
+}
+header {
+  position: relative;
+}
+
+header:after {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  content: '';
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  z-index: 9;
+  position: relative;
+  padding: 0 15px;
+}
+
+.header-nav a {
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+}
+.header-nav a:hover {
+  text-decoration: underline;
+}
+.price-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.price-bar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 12px;
+  padding: 10px;
+  min-width: fit-content;
+}
+
+.price-bar ul li span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.price-bar ul li:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.price-bar {
+  border: 1px solid #ececec;
+}
+.brand-area-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px 0 30px;
+}
+.product-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 30px 0 80px;
+}
+
+.product-item {
+  position: relative;
+  cursor: pointer;
+  background: #fafafa;
+  text-align: center;
+}
+
+.product-item strong {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9;
+  width: 24px;
+}
+
+.product-item-content {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product-item-content h2 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-item-content span {
+  color: #d2d2d2;
+}
+footer {
+  background: #000;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-nav a {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 230px;
+  padding: 0;
+  margin: 0 auto 60px;
+}
+
+.footer-copyright p {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  margin-top: 80px;
+  opacity: 0.5;
+}
+.metamask-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  margin-top: 12px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 100;
+}
+
+.metamask-wallet-address {
+  text-align: right;
+}
+
+.metamask-wallet-address h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.metamask-wallet-address p {
+  font-size: 11px;
+  margin-top: -14px;
+  background: #fff;
+}
+
+.metamask-area button {
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.coin-buy-popup-inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 40px 70px 50px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 90px -10px rgb(0 0 0 / 20%);
+  z-index: 99;
+  position: relative;
+}
+.coin-buy-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffffe6;
+  z-index: 99999;
+}
+
+.coin-buy-popup-inner svg {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  cursor: pointer;
+}
+
+.coin-buy-popup-inner button {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+.coin-buy-popup-inner h2 {
+  margin-bottom: 20px;
+}
+
+.coin-buy-popup-inner input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 70%;
+}
+
+.coin-buy-input span {
+  background: #e9ecef;
+  padding: 9px 14px;
+}
+
+.coin-buy-popup-inner:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 90%;
+  height: 84%;
+  border: 2px solid #000;
+  z-index: -1;
+}
+
+ul.slick-dots.slick-thumb {
+  position: relative;
+  text-align: left;
+  display: flex !important;
+}
+
+ul.slick-dots.slick-thumb li {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+ul.slick-dots.slick-thumb li.slick-active img {
+  border: 1px solid #000;
+}
+.slick-slider {
+  overflow: hidden;
+  padding: 50px 0;
+}
+.product-details-area {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.product-details-info {
+  padding: 40px 0 50px;
+}
+
+.product-details-info ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.product-details-info p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.product-details-info h3 {
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.product-details-info h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-top: 1px solid #000;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+}
+.product-details-info ul li strong {
+  font-weight: 600;
+}
+.product-info-chart li:last-child {
+  border-bottom: none;
+}
+.section-heading h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  background: #fff;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.section-heading:after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  z-index: -1;
+}
+
+.section-heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.coming-soon {
+  position: relative;
+}
+
+.coming-soon strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: #e2e2e2;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+}
+.related-product-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.related-product {
+  margin: 80px 0;
+}
+.contact-map iframe {
+  height: 450px;
+}
+.contact-area h2 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 30px;
+}
+
+.contact-area-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contact-location p {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 13px;
+}
+
+.contact-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 11px 34px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-map {
+  margin-top: 90px;
+}
+.privacy-policy h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 0;
+}
+
+.privacy-policy {
+  margin-bottom: 70px;
+}
+
+.privacy-policy p {
+  margin-bottom: 20px;
+}
+.metamask-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffffe6;
+  z-index: 99999;
+}
+
+.metamask-popup-inner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 40px 40px 50px;
+  max-width: 630px;
+  text-align: center;
+  box-shadow: 0 0 90px -10px rgb(0 0 0 / 20%);
+  z-index: 99;
+  position: relative;
+}
+
+.metamask-popup-inner:after {
+  content: '';
+  position: absolute;
+  width: 93%;
+  height: 90%;
+  border: 1px solid #000;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+
+.metamask-popup-inner h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.metamask-popup-inner p {
+  font-size: 12px;
+}
+
+.metamask-popup-inner h3 {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.metamask-popup-inner span img {
+  max-width: 100px !important;
+}
+.metamask-popup-inner h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.metamask-popup-inner h4 a {
+  color: #000;
+  display: inline-block;
+  padding: 0 5px;
+  border-bottom: 1px solid #f1c46b;
+}
+.metamask-popup-inner svg {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  color: #ff5151;
+  cursor: pointer;
+}
+.digi-gold-management-area h3 {
+  text-align: center;
+}
+
+.digi-gold-management-area {
+  background: #eeeae4;
+  padding: 30px 0;
+}
+
+.digi-gold-management-area h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 60px;
+  font-weight: 400;
+}
+
+.digi-gold-management-area p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.digi-gold-management-area table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.digi-gold-management-area table thead {
+  background: #808080;
+  color: #fff;
+  height: 45px;
+}
+
+.digi-gold-management-area tbody tr td {
+  border: 1px solid #d4d3d3;
+  padding: 12px;
+  text-align: center;
+}
+
+.digi-gold-management-area h6 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.digi-gold-faq {
+  padding: 80px 0;
+}
+
+.digi-gold-faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.digi-gold-faq p {
+  text-align: left;
+  margin: 20px 10px;
+}
+
+.accordion__button:before {
+  right: 10px;
+  position: absolute;
+}
+
+.accordion__button {
+  position: relative;
+  background: #eeeae4;
+}
+
+.accordion {
+  border: none !important;
+  border-color: #d4d3d3 !important;
+}
+
+.accordion__item {
+  border: 1px solid #d4d3d3;
+  margin: 5px 0;
+}
+.digi-gold-header {
+  position: relative;
+}
+
+.digi-gold-header h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 500px;
+  padding-bottom: 80px;
+}
+.middle-menu {
+  margin-left: 80px;
+}
+.digi-gold-info p {
+  text-align: center;
+  padding: 50px 0;
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.digi-gold-info {
+  background: #eeeae4;
+  margin-top: -6px;
+}
+
+.digi-gold-info h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.digi-gold-input-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.digi-gold-input-area p {
+  max-width: unset;
+  margin: 0;
+}
+
+.digi-gold-input-area p {
+  font-size: 18px;
+}
+
+.digi-gold-input span {
+  background: #d6d6d6;
+  padding: 8px 17px;
+}
+
+.digi-gold-input input {
+  padding: 10px;
+  margin-left: -4px;
+  border: none;
+}
+
+.digi-gold-input-area button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.digi-gold-info h3 {
+  text-align: center;
+  background: #fbf9f7;
+  max-width: 640px;
+  margin: 0px auto;
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.digi-gold-info ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  margin-top: 8px;
+}
+.digi-gold-info2 {
+  padding: 50px;
+}
+
+.digi-gold-info2 h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.digi-gold-estimated {
+  background-color: rgb(149, 127, 78) !important;
+  background: linear-gradient(
+    337deg,
+    rgba(150, 128, 79, 1) 0%,
+    rgba(230, 210, 180, 1) 37%,
+    rgba(150, 128, 79, 1) 100%
+  );
+  max-width: 440px;
+  text-align: center;
+  padding: 50px;
+  margin: 50px auto;
+}
+
+.digi-gold-estimated h3 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.digi-gold-estimated h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.digi-gold-estimated h6 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.digi-gold-estimated button {
+  background: #000;
+  color: #fff;
+  font-weight: 300;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.digi-gold-header {
+  background: url('../public/img/digi-gold-bg.jpg') no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 991px) {
+  .header-nav a {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .header-nav {
+    display: grid;
+    grid-gap: 4px;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  header:after {
+    display: none;
+  }
+
+  .header-logo {
+    padding: 40px 0;
+  }
+
+  .metamask-area {
+    display: grid;
+    gap: 20px;
+    padding-bottom: 14px;
+    justify-content: space-around;
+  }
+
+  .metamask-area button {
+    display: block;
+  }
+
+  .metamask-wallet-address {
+    text-align: center;
+  }
+
+  .metamask-wallet-address h2 {
+    font-size: 12px;
+  }
+
+  .metamask-wallet-address p {
+    font-size: 9px;
+  }
+
+  .brand-area-inner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .product-area {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .footer-nav {
+    padding: 0 10px;
+  }
+
+  .footer-logo {
+    padding: 0 40px;
+  }
+
+  .footer-copyright p {
+    margin-top: 40px;
+  }
+  iframe {
+    height: 300px;
+  }
+  .product-item {
+    text-align: center;
+    background: #fafafa;
+  }
+  .product-details-area {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .coming-soon strong {
+    position: unset;
+    text-align: center;
+    display: block;
+    transform: unset;
+    font-size: 26px;
+  }
+
+  .related-product-inner {
+    grid-template-columns: 1fr;
+  }
+  .contact-area-inner {
+    grid-template-columns: 1fr;
+  }
+  .metamask-popup-inner svg {
+    right: 45%;
+    top: -40px;
+  }
+
+  .footer-nav a {
+    font-size: 12px;
+  }
+  .price-bar ul {
+    display: block;
+  }
+  .price-bar {
+    margin-bottom: 60px;
+  }
+  .coin-buy-popup-inner svg {
+    right: 48%;
+    top: -40px;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50px;
+  }
+  .coin-buy-popup-inner button {
+    display: unset;
+  }
+  .digi-gold-header h2 {
+    bottom: 42%;
+    left: 50%;
+    font-size: 30px;
+  }
+  .digi-gold-input-area {
+    display: grid;
+    margin: 40px 0;
+  }
+
+  .digi-gold-input-area p {
+    padding: 0;
+  }
+
+  .digi-gold-estimated {
+    margin-bottom: 0;
+  }
+
+  .digi-gold-management-area thead th {
+    font-size: 12px;
+  }
+  .middle-menu {
+    margin-left: 0;
+  }
+}
